@@ -11,5 +11,10 @@
     "express": "^4.18.2",
     "cors": "^2.8.5",
     "body-parser": "^1.20.2"
-  }
+  },
+  "scripts": {
+  "build": "ng build",
+  "build:gh-pages": "ng build --configuration production --base-href=/ScentifyShop/",
+  "deploy:gh-pages": "npm run build:gh-pages && gh-pages -d www"
+}
 }
